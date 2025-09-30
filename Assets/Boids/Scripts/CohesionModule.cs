@@ -13,7 +13,6 @@ public class CohesionModule : BoidModules
     {
         base.Update();
 
-        //_boid.transform.position += GetBarycentre(_neighborsList) * _data.Cohesion * Time.deltaTime * 10;
         _boid.velocity += GetBarycentre(_neighborsList) * _data.Cohesion * Time.deltaTime * 10;
     }
 
@@ -28,7 +27,15 @@ public class CohesionModule : BoidModules
 
         foreach (Boid neighbor in neighbors)
         {
-            center += neighbor.transform.position;
+            if (Vector3.Distance(_boid.transform.position, neighbor.transform.position) > 10)
+            {
+                center += neighbor.transform.position * 1.5f;
+            }
+            else // Si le voisin n'est pas trop eloigner 
+            {
+                center += neighbor.transform.position;
+            }
+            
         }
 
         center = center/neighbors.Count;

@@ -4,11 +4,6 @@ using UnityEngine;
 public class Boid : MonoBehaviour
 {
     private BoidsManager boidsManager;
-    private BoidData boidData;
-
-    public CohesionModule cohesionModule;
-    public SeparationModule separationModule;
-    public AlignmentModule alignmentModule;
 
     private List<BoidModules> modules;
 
@@ -17,7 +12,6 @@ public class Boid : MonoBehaviour
     public void Init(BoidData data)
     {
         modules = new List<BoidModules>();
-        boidData = data;
 
         //AddModule<PhysicsForceModule>(data);
 

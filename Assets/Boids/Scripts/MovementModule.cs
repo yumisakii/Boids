@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class MovementModule : BoidModules
 {
-    private float maxSpeed = 10f;
+    private float baseSpeed = 5f;
+    private float maxSpeed = 50f;
     private float friction = 0.98f;
 
     public override void Init(Boid boid, BoidData data)
@@ -12,15 +13,18 @@ public class MovementModule : BoidModules
             Random.Range(-1f, 1f),
             Random.Range(-1f, 1f),
             Random.Range(-1f, 1f)
-            ).normalized*2;
+            ).normalized * baseSpeed;
     }
 
     public override void Update()
     {
         base.Update();
-        _boid.velocity = _boid.velocity.normalized * 1.2f;
+
+        _boid.velocity = _boid.velocity.normalized * baseSpeed;
+
         if (_boid.velocity.magnitude > maxSpeed)
         {
+            Debug.Log("Max speed cap");
             _boid.velocity = _boid.velocity.normalized * maxSpeed;
         }
 

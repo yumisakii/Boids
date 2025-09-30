@@ -3,8 +3,6 @@ using UnityEngine;
 
 public class AlignmentModule : BoidModules
 {
-    private CohesionModule _cohesionModule;
-    private SeparationModule _separationModule;
     public override void Init(Boid boid, BoidData data)
     {
         base.Init(boid, data);
@@ -15,7 +13,7 @@ public class AlignmentModule : BoidModules
         base.Update();
 
         //_boid.transform.position += GetAlignmentDirection() * _data.Cohesion * Time.deltaTime;
-        _boid.velocity += GetAlignmentDirection() * _data.Cohesion * Time.deltaTime;
+        _boid.velocity += GetAlignmentDirection() * _data.Alignement * Time.deltaTime;
     }
 
     private Vector3 GetAlignmentDirection()

@@ -1,7 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem.DualShock;
-using static UnityEditor.Searcher.SearcherWindow;
 
 public class BoidsManager : MonoBehaviour
 {
@@ -19,7 +17,7 @@ public class BoidsManager : MonoBehaviour
     {
         boids = new List<Boid>();
 
-        for (int i = 0; i < 30; i++)
+        for (int i = 0; i < 100; i++)
         {
             CreateBoid();
         }
