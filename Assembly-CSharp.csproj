@@ -64,6 +64,7 @@
     <Compile Include="Assets\Boids\Scripts\BoidModules.cs" />
     <Compile Include="Assets\Boids\Scripts\SeparationModule.cs" />
     <Compile Include="Assets\Boids\Scripts\Boid.cs" />
+    <Compile Include="Assets\Boids\Scripts\FollowPoints.cs" />
     <Compile Include="Assets\Boids\Scripts\MovementModule.cs" />
     <Compile Include="Assets\Boids\Scripts\BoidsManager.cs" />
     <Compile Include="Assets\Boids\Scripts\BoidData.cs" />
