@@ -6,14 +6,25 @@ public class Boid : MonoBehaviour
     private BoidsManager boidsManager;
     private BoidData boidData;
 
+    public CohesionModule cohesionModule;
+    public SeparationModule separationModule;
+    public AlignmentModule alignmentModule;
+
     private List<BoidModules> modules;
+
+    public Vector3 velocity = Vector3.zero;
+
     public void Init(BoidData data)
     {
         modules = new List<BoidModules>();
         boidData = data;
 
-        AddModule<MovementModule>(data);
+        //AddModule<PhysicsForceModule>(data);
+
         AddModule<CohesionModule>(data);
+        AddModule<SeparationModule>(data);
+        AddModule<AlignmentModule>(data);
+        AddModule<MovementModule>(data);
 
         for (int i = 0; i < modules.Count; i++)
         {

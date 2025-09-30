@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.EventSystems.EventTrigger;
 
 public class CohesionModule : BoidModules
 {
@@ -14,10 +13,11 @@ public class CohesionModule : BoidModules
     {
         base.Update();
 
-        _boid.transform.position += GetBarycentre(_neighborsPosList) * _data.Cohesion * Time.deltaTime;
+        //_boid.transform.position += GetBarycentre(_neighborsList) * _data.Cohesion * Time.deltaTime * 10;
+        _boid.velocity += GetBarycentre(_neighborsList) * _data.Cohesion * Time.deltaTime * 10;
     }
 
-    private Vector3 GetBarycentre(List<Vector3> neighbors)
+    private Vector3 GetBarycentre(List<Boid> neighbors)
     {
         Vector3 center = Vector3.zero;
 
@@ -26,14 +26,12 @@ public class CohesionModule : BoidModules
             return Vector3.zero;
         }
 
-        foreach (Vector3 neighbor in neighbors)
+        foreach (Boid neighbor in neighbors)
         {
-            center += neighbor;
+            center += neighbor.transform.position;
         }
 
         center = center/neighbors.Count;
-
-        Debug.Log(center);
 
         Vector3 direction = (center - _boid.transform.position).normalized;
         return direction;

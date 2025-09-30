@@ -1,12 +1,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BoidModules
+public abstract class BoidModules
 {
     public Boid _boid;
     public BoidsManager boidsManager;
     public BoidData _data;
-    public List<Vector3> _neighborsPosList;
+
+    protected List<Boid> _closeNeighborsList;
+    protected List<Boid> _neighborsList;
 
 
     public virtual void Init(Boid boid, BoidData data)
@@ -18,6 +20,8 @@ public class BoidModules
    
     public virtual void Update()
     {
-        _neighborsPosList = boidsManager.GetNeighborsBoids(_boid);
+        var (closeNeighbors, neighbors) = boidsManager.GetNeighborsBoids(_boid);
+        _closeNeighborsList = closeNeighbors;
+        _neighborsList = neighbors;
     }
 }

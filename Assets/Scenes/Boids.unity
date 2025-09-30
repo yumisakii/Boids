@@ -456,7 +456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boid: {fileID: 8113159277244911587, guid: 052b52687546dcf47a4492a1ccbfc755, type: 3}
-  distanceForNeighbors: 5
+  distanceForNeighbors: 10
   cohesion: 1
   separation: 1
   alignement: 1

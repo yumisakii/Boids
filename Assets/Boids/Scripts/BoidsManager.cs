@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem.DualShock;
 using static UnityEditor.Searcher.SearcherWindow;
 
 public class BoidsManager : MonoBehaviour
@@ -18,9 +19,10 @@ public class BoidsManager : MonoBehaviour
     {
         boids = new List<Boid>();
 
-        CreateBoid();
-        CreateBoid();
-        CreateBoid();
+        for (int i = 0; i < 30; i++)
+        {
+            CreateBoid();
+        }
     }
 
     void Update()
@@ -30,7 +32,7 @@ public class BoidsManager : MonoBehaviour
 
     void CreateBoid()
     {
-        Boid newBoid = Instantiate(boid, new Vector3(Random.Range(-2, 2), Random.Range(-2, 2), Random.Range(-2, 2)), Quaternion.identity);
+        Boid newBoid = Instantiate(boid, new Vector3(Random.Range(-10, 10), Random.Range(-10, 10), Random.Range(-10, 10)), Quaternion.identity);
         //Boid newBoid = Instantiate(boid);
 
         BoidData data = new BoidData
@@ -45,18 +47,28 @@ public class BoidsManager : MonoBehaviour
         boids.Add(newBoid);
     }
 
-    public List<Vector3> GetNeighborsBoids(Boid boid)
+    public (List<Boid>, List<Boid>) GetNeighborsBoids(Boid boid)
     {
-        List<Vector3> neighbors = new List<Vector3>();
+        List<Boid> closeNeighbors = new List<Boid>();
+        List<Boid> neighbors = new List<Boid>();
+
+        float distanceForCloseNeighbors = distanceForNeighbors - (distanceForNeighbors / 3);
 
         for (int i = 0; i < boids.Count; i++)
         {
-            if (Vector3.Distance(boid.transform.position, boids[i].transform.position) < distanceForNeighbors)
+            if (boids[i] == boid) continue;
+
+            float distance = Vector3.Distance(boid.transform.position, boids[i].transform.position);
+
+            if (distance < distanceForNeighbors)
             {
-                neighbors.Add(boids[i].transform.position);
+                if (distance < distanceForCloseNeighbors)
+                {
+                    closeNeighbors.Add(boids[i]);
+                }
+                neighbors.Add(boids[i]);
             }
         }
-
-        return neighbors;
+        return (closeNeighbors, neighbors);
     }
 }
