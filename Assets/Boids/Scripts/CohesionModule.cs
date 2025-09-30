@@ -27,18 +27,10 @@ public class CohesionModule : BoidModules
 
         foreach (Boid neighbor in neighbors)
         {
-            if (Vector3.Distance(_boid.transform.position, neighbor.transform.position) > 10)
-            {
-                center += neighbor.transform.position * 1.5f;
-            }
-            else // Si le voisin n'est pas trop eloigner 
-            {
-                center += neighbor.transform.position;
-            }
-            
+            center += neighbor.transform.position;
         }
 
-        center = center/neighbors.Count;
+        center /= neighbors.Count;
 
         Vector3 direction = (center - _boid.transform.position).normalized;
         return direction;

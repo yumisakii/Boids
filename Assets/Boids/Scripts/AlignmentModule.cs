@@ -12,7 +12,6 @@ public class AlignmentModule : BoidModules
     {
         base.Update();
 
-        //_boid.transform.position += GetAlignmentDirection() * _data.Cohesion * Time.deltaTime;
         _boid.velocity += GetAlignmentDirection() * _data.Alignement * Time.deltaTime;
     }
 

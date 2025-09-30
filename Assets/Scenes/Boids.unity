@@ -368,7 +368,7 @@ MonoBehaviour:
   boid: {fileID: 5986778333895086750, guid: 9e9f5f1eab46e1547a15badd01f57462, type: 3}
   distanceForNeighbors: 12
   cohesion: 1
-  separation: 1
+  separation: 0.975
   alignement: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
