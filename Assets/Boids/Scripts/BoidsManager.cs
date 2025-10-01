@@ -4,6 +4,7 @@ using UnityEngine;
 public class BoidsManager : MonoBehaviour
 {
     [SerializeField] private Boid boid;
+    [SerializeField] private Hunter hunter;
 
     [SerializeField] private float distanceForNeighbors;
 
@@ -21,6 +22,8 @@ public class BoidsManager : MonoBehaviour
         {
             CreateBoid();
         }
+
+        CreateHunter();
     }
 
     void Update()
@@ -67,5 +70,29 @@ public class BoidsManager : MonoBehaviour
             }
         }
         return (closeNeighbors, neighbors);
+    }
+
+
+    // Hunter part
+
+    void CreateHunter()
+    {
+        Hunter newHunter = Instantiate(hunter, new Vector3(30f, 30f, 30f), Quaternion.identity);
+
+        newHunter.SetManager(this);
+        newHunter.Init();
+    }
+
+    public Vector3 GetBoidsMiddle()
+    {
+        Vector3 middle = Vector3.zero;
+
+        foreach (Boid boid in boids)
+        {
+            middle += boid.transform.position;
+        }
+
+        middle /= boids.Count;
+        return middle;
     }
 }

@@ -65,6 +65,7 @@
     <Compile Include="Assets\Boids\Scripts\SeparationModule.cs" />
     <Compile Include="Assets\Boids\Scripts\BoidData.cs" />
     <Compile Include="Assets\Boids\Scripts\Boid.cs" />
+    <Compile Include="Assets\Boids\Scripts\Hunter\Hunter.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Boids\Scripts\BoidModules.cs" />
     <Compile Include="Assets\Boids\Scripts\CohesionModule.cs" />

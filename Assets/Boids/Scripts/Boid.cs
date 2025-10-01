@@ -4,11 +4,9 @@ using UnityEngine;
 public class Boid : MonoBehaviour
 {
     private BoidsManager boidsManager;
-
     private List<BoidModules> modules;
 
     public Vector3 velocity = Vector3.zero;
-
     public float speedMultiplicator;
 
     public void Init(BoidData data)
@@ -65,4 +63,6 @@ public class Boid : MonoBehaviour
         modules.Add(module);
         return module;
     }
+
+    
 }

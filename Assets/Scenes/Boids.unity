@@ -377,6 +377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boid: {fileID: 1089587928197948990, guid: 052b52687546dcf47a4492a1ccbfc755, type: 3}
+  hunter: {fileID: -7695399113020327002, guid: 44a5d81fa8671b6438c9fe1174ed5dda, type: 3}
   distanceForNeighbors: 12
   cohesion: 1
   separation: 1
