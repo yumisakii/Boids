@@ -4,18 +4,29 @@ using UnityEngine;
 public class BoidsManager : MonoBehaviour
 {
     [SerializeField] private Boid boid;
+    [SerializeField] private Boid leader;
 
     [SerializeField] private float distanceForNeighbors;
+    private Vector3 leaderStartPosition;
 
     [SerializeField, Range(0,1)] private float cohesion;
     [SerializeField, Range(0,1)] private float separation;
     [SerializeField, Range(0,1)] private float alignement;
-    
+    [SerializeField, Range(0f, 5f)] private float followLeaderStrength = 1f;
+
+    private float radiusZone = 75f;
+
+    public Vector3 GetZoneCenter() => leaderStartPosition;
+    public float GetZoneRadius() => radiusZone;
+
+
     private List<Boid> boids;
 
-    void Start()
+    private void Start()
     {
         boids = new List<Boid>();
+
+        CreateLeader();
 
         for (int i = 0; i < 100; i++)
         {
@@ -23,12 +34,21 @@ public class BoidsManager : MonoBehaviour
         }
     }
 
-    void Update()
+    private void CreateLeader()
     {
-        
+        leader = Instantiate(leader, new Vector3(Random.Range(-10, 10), Random.Range(-10, 10), Random.Range(-10, 10)), Quaternion.identity);
+        leader.GetComponent<Renderer>().material.color = Color.red;
+        leaderStartPosition = leader.transform.position;
+
+        FollowPoints followPoints = leader.GetComponent<FollowPoints>();
+        if (followPoints != null)
+        {
+            followPoints.Init(leaderStartPosition, 50f); // rayon du Gizmo
+        }
+
     }
 
-    void CreateBoid()
+    private void CreateBoid()
     {
         Boid newBoid = Instantiate(boid, new Vector3(Random.Range(-10, 10), Random.Range(-10, 10), Random.Range(-10, 10)), Quaternion.identity);
         //Boid newBoid = Instantiate(boid);
@@ -37,7 +57,8 @@ public class BoidsManager : MonoBehaviour
         {
             Cohesion = cohesion,
             Separation = separation,
-            Alignement = alignement
+            Alignement = alignement,
+            FollowLeaderStrength = followLeaderStrength
         };
 
         newBoid.SetBoidsManager(this);
@@ -69,4 +90,20 @@ public class BoidsManager : MonoBehaviour
         }
         return (closeNeighbors, neighbors);
     }
+
+    public Boid GetLeader()
+    {
+        return leader;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = new Color(1f, 0f, 0f, 0.5f);
+        Gizmos.DrawSphere(leaderStartPosition, radiusZone);
+
+        // Draw wire sphere outline.
+        Gizmos.color = Color.white;
+        Gizmos.DrawWireSphere(leaderStartPosition, radiusZone);
+    }
+
 }

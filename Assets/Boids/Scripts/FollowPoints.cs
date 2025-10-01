@@ -4,10 +4,17 @@ using UnityEngine;
 public class FollowPoints : MonoBehaviour
 {
     [SerializeField] private float speed;
-    [SerializeField] private Vector3 bounds = new Vector3(30, 30, 30);
     private Vector3 targetPoint;
     private Vector3 direction;
     private Vector3 velocity;
+    private Vector3 centerPosition;
+    private float radius;
+
+    public void Init(Vector3 center, float radius)
+    {
+        centerPosition = center;
+        this.radius = radius;
+    }
 
     private void Start()
     {
@@ -33,18 +40,7 @@ public class FollowPoints : MonoBehaviour
 
     private Vector3 GetRandomPoint()
     {
-        Vector3 newPoint;
-        Vector3 forward = velocity == Vector3.zero ? Vector3.forward : velocity.normalized;
-        do
-        {
-            newPoint = new Vector3(
-                Random.Range(-bounds.x, bounds.x),
-                Random.Range(-bounds.y, bounds.y),
-                Random.Range(-bounds.z, bounds.z)
-            );
-        }
-        while (Vector3.Dot((newPoint - transform.position).normalized, forward) < 0.3f);
-
-        return newPoint;
+        return centerPosition + Random.insideUnitSphere * radius;
     }
+
 }

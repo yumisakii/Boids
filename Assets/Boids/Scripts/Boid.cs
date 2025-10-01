@@ -13,11 +13,11 @@ public class Boid : MonoBehaviour
     {
         modules = new List<BoidModules>();
 
-        //AddModule<PhysicsForceModule>(data);
-
         AddModule<CohesionModule>(data);
         AddModule<SeparationModule>(data);
         AddModule<AlignmentModule>(data);
+        AddModule<FollowLeaderModule>(data);
+        AddModule<StayInZoneModule>(data);
         AddModule<MovementModule>(data);
 
         for (int i = 0; i < modules.Count; i++)
@@ -28,6 +28,8 @@ public class Boid : MonoBehaviour
 
     void Update()
     {
+        if (modules == null) return;
+
         for (int i = 0; i < modules.Count; i++)
         {
             modules[i].Update();
