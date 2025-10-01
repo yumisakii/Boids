@@ -9,7 +9,8 @@ public abstract class BoidModules
 
     protected List<Boid> _closeNeighborsList;
     protected List<Boid> _neighborsList;
-
+    
+    
 
     public virtual void Init(Boid boid, BoidData data)
     {

@@ -19,6 +19,8 @@ public class CohesionModule : BoidModules
     private Vector3 GetBarycentre(List<Boid> neighbors)
     {
         Vector3 center = Vector3.zero;
+        float weight = 0f;
+        float totalWeight = 0f;
 
         if (neighbors.Count == 0)
         {
@@ -27,10 +29,14 @@ public class CohesionModule : BoidModules
 
         foreach (Boid neighbor in neighbors)
         {
-            center += neighbor.transform.position;
+            float distance = Vector3.Distance(_boid.transform.position, neighbor.transform.position);
+            weight = distance;
+
+            center += neighbor.transform.position * weight;
+            totalWeight += weight;
         }
 
-        center /= neighbors.Count;
+        center /= totalWeight;
 
         Vector3 direction = (center - _boid.transform.position).normalized;
         return direction;

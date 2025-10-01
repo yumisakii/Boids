@@ -31,7 +31,6 @@ public class BoidsManager : MonoBehaviour
     void CreateBoid()
     {
         Boid newBoid = Instantiate(boid, new Vector3(Random.Range(-10, 10), Random.Range(-10, 10), Random.Range(-10, 10)), Quaternion.identity);
-        //Boid newBoid = Instantiate(boid);
 
         BoidData data = new BoidData
         {

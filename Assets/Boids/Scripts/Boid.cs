@@ -9,16 +9,25 @@ public class Boid : MonoBehaviour
 
     public Vector3 velocity = Vector3.zero;
 
+    public float speedMultiplicator;
+
     public void Init(BoidData data)
     {
-        modules = new List<BoidModules>();
+        speedMultiplicator = 1;
+        int n = Random.Range(0, 10);// Chance to be a spacial Boid
 
-        //AddModule<PhysicsForceModule>(data);
+        modules = new List<BoidModules>();
 
         AddModule<CohesionModule>(data);
         AddModule<SeparationModule>(data);
         AddModule<AlignmentModule>(data);
         AddModule<MovementModule>(data);
+
+        if (n == 0) {
+            AddModule<SpecialBoidModule>(data);
+
+
+        }
 
         for (int i = 0; i < modules.Count; i++)
         {
@@ -41,6 +50,12 @@ public class Boid : MonoBehaviour
      public BoidsManager GetBoidsManager()
     {
         return this.boidsManager;
+    }
+
+    public void SetColor(Color color)
+    {
+        Renderer rend = GetComponent<Renderer>();
+        rend.material.color = color;
     }
 
     private T AddModule<T>(BoidData data) where T : BoidModules, new()
