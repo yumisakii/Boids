@@ -26,7 +26,12 @@ public class Boid : MonoBehaviour
         }
     }
 
-    void Update()
+    public void Repulse(Vector3 direction, float force)
+    {
+        transform.position += force * Time.deltaTime * direction;
+    }
+
+    private void Update()
     {
         if (modules == null) return;
 

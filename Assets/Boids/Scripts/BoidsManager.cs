@@ -1,5 +1,7 @@
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using static UnityEngine.ParticleSystem;
 
 public class BoidsManager : MonoBehaviour
 {
@@ -21,6 +23,7 @@ public class BoidsManager : MonoBehaviour
 
 
     private List<Boid> boids;
+    [SerializeField] private RepulseModule[] repulseObstacles;
 
     private void Start()
     {
@@ -34,6 +37,32 @@ public class BoidsManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        for (int i = 0; i < boids.Count; i++)
+        {
+            for (int j = 0; j < repulseObstacles.Length; j++)
+            {
+                Vector3 direction = (boids[i].transform.position - repulseObstacles[j].transform.position);
+
+                if (direction.sqrMagnitude < (repulseObstacles[j].GetRadius() * repulseObstacles[j].GetRadius()))
+                {
+                    repulseObstacles[j].ApplyRepulse(boids[i]);
+                }
+            }
+        }
+
+        for (int k = 0; k < repulseObstacles.Length; k++)
+        {
+            Vector3 direction = (leader.transform.position - repulseObstacles[k].transform.position);
+
+            if (direction.sqrMagnitude < (repulseObstacles[k].GetRadius() * repulseObstacles[k].GetRadius()))
+            {
+                repulseObstacles[k].ApplyRepulse(leader);
+            }
+        }
+    }
+
     private void CreateLeader()
     {
         leader = Instantiate(leader, new Vector3(Random.Range(-10, 10), Random.Range(-10, 10), Random.Range(-10, 10)), Quaternion.identity);
@@ -43,7 +72,7 @@ public class BoidsManager : MonoBehaviour
         FollowPoints followPoints = leader.GetComponent<FollowPoints>();
         if (followPoints != null)
         {
-            followPoints.Init(leaderStartPosition, 50f); // rayon du Gizmo
+            followPoints.Init(leaderStartPosition, 50f, repulseObstacles); // rayon du Gizmo
         }
 
     }
