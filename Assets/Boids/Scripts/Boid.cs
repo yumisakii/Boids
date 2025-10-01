@@ -19,6 +19,8 @@ public class Boid : MonoBehaviour
         AddModule<CohesionModule>(data);
         AddModule<SeparationModule>(data);
         AddModule<AlignmentModule>(data);
+        AddModule<FollowLeaderModule>(data);
+        AddModule<StayInZoneModule>(data);
         AddModule<MovementModule>(data);
 
         if (n == 0) {
@@ -33,8 +35,15 @@ public class Boid : MonoBehaviour
         }
     }
 
-    void Update()
+    public void Repulse(Vector3 direction, float force)
     {
+        transform.position += force * Time.deltaTime * direction;
+    }
+
+    private void Update()
+    {
+        if (modules == null) return;
+
         for (int i = 0; i < modules.Count; i++)
         {
             modules[i].Update();

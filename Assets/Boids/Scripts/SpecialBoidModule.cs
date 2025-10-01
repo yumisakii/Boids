@@ -9,7 +9,7 @@ public class SpecialBoidModule : BoidModules
     {
         base.Init(boid, data);
 
-        int n = Random.Range(0, 4);
+        int n = Random.Range(0, 3);
         //int n = 3;
         switch (n)
         {
@@ -30,11 +30,11 @@ public class SpecialBoidModule : BoidModules
                 _boid.SetColor(Color.yellow);
                 break;
 
-            case 3: // COLIBRIS
-                _data.Cohesion = 1.25f;
-                isColibris = true;
-                _boid.SetColor(Color.red);
-                break;
+            //case 3: // COLIBRIS
+            //    _data.Cohesion = 1.25f;
+            //    isColibris = true;
+            //    _boid.SetColor(Color.red);
+            //    break;
         }
     }
 
@@ -42,23 +42,23 @@ public class SpecialBoidModule : BoidModules
     {
         base.Update();
 
-        if (isColibris)
-        {
-            if (timer > impulseTimer * 2)
-            {
-                timer = 0;
-            }
-            else if (timer > impulseTimer)
-            {
-                _boid.speedMultiplicator = 100;
-                timer++;
-            }
-            else
-            {
-                _boid.speedMultiplicator = 0;
-                timer += Time.deltaTime;
-            }
-        }
+        //if (isColibris)
+        //{
+        //    if (timer > impulseTimer * 2)
+        //    {
+        //        timer = 0;
+        //    }
+        //    else if (timer > impulseTimer)
+        //    {
+        //        _boid.speedMultiplicator = 100;
+        //        timer++;
+        //    }
+        //    else
+        //    {
+        //        _boid.speedMultiplicator = 0;
+        //        timer += Time.deltaTime;
+        //    }
+        //}
 
     }
 }

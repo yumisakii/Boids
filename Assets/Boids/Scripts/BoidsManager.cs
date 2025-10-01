@@ -1,22 +1,37 @@
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using static UnityEngine.ParticleSystem;
 
 public class BoidsManager : MonoBehaviour
 {
     [SerializeField] private Boid boid;
     [SerializeField] private Hunter hunter;
+    [SerializeField] private Boid leader;
+
 
     [SerializeField] private float distanceForNeighbors;
+    private Vector3 leaderStartPosition;
 
     [SerializeField, Range(0,1)] private float cohesion;
     [SerializeField, Range(0,1)] private float separation;
     [SerializeField, Range(0,1)] private float alignement;
-    
-    private List<Boid> boids;
+    [SerializeField, Range(0f, 5f)] private float followLeaderStrength = 1f;
 
-    void Start()
+    private float radiusZone = 75f;
+
+    public Vector3 GetZoneCenter() => leaderStartPosition;
+    public float GetZoneRadius() => radiusZone;
+
+
+    private List<Boid> boids;
+    [SerializeField] private RepulseModule[] repulseObstacles;
+
+    private void Start()
     {
         boids = new List<Boid>();
+
+        CreateLeader();
 
         for (int i = 0; i < 100; i++)
         {
@@ -26,12 +41,47 @@ public class BoidsManager : MonoBehaviour
         CreateHunter();
     }
 
-    void Update()
+    private void Update()
     {
-        
+        for (int i = 0; i < boids.Count; i++)
+        {
+            for (int j = 0; j < repulseObstacles.Length; j++)
+            {
+                Vector3 direction = (boids[i].transform.position - repulseObstacles[j].transform.position);
+
+                if (direction.sqrMagnitude < (repulseObstacles[j].GetRadius() * repulseObstacles[j].GetRadius()))
+                {
+                    repulseObstacles[j].ApplyRepulse(boids[i]);
+                }
+            }
+        }
+
+        for (int k = 0; k < repulseObstacles.Length; k++)
+        {
+            Vector3 direction = (leader.transform.position - repulseObstacles[k].transform.position);
+
+            if (direction.sqrMagnitude < (repulseObstacles[k].GetRadius() * repulseObstacles[k].GetRadius()))
+            {
+                repulseObstacles[k].ApplyRepulse(leader);
+            }
+        }
     }
 
-    void CreateBoid()
+    private void CreateLeader()
+    {
+        leader = Instantiate(leader, new Vector3(Random.Range(-10, 10), Random.Range(-10, 10), Random.Range(-10, 10)), Quaternion.identity);
+        leader.GetComponent<Renderer>().material.color = Color.red;
+        leaderStartPosition = leader.transform.position;
+
+        FollowPoints followPoints = leader.GetComponent<FollowPoints>();
+        if (followPoints != null)
+        {
+            followPoints.Init(leaderStartPosition, 50f, repulseObstacles); // rayon du Gizmo
+        }
+
+    }
+
+    private void CreateBoid()
     {
         Boid newBoid = Instantiate(boid, new Vector3(Random.Range(-10, 10), Random.Range(-10, 10), Random.Range(-10, 10)), Quaternion.identity);
 
@@ -39,7 +89,8 @@ public class BoidsManager : MonoBehaviour
         {
             Cohesion = cohesion,
             Separation = separation,
-            Alignement = alignement
+            Alignement = alignement,
+            FollowLeaderStrength = followLeaderStrength
         };
 
         newBoid.SetBoidsManager(this);
@@ -72,15 +123,16 @@ public class BoidsManager : MonoBehaviour
         return (closeNeighbors, neighbors);
     }
 
-
     // Hunter part
 
     void CreateHunter()
     {
-        Hunter newHunter = Instantiate(hunter, new Vector3(30f, 30f, 30f), Quaternion.identity);
+        //Hunter newHunter = Instantiate(hunter, new Vector3(30f, 30f, 30f), Quaternion.identity);
 
-        newHunter.SetManager(this);
-        newHunter.Init();
+        //newHunter.SetManager(this);
+        //newHunter.Init();
+        hunter.SetManager(this);
+        hunter.Init();
     }
 
     public Vector3 GetBoidsMiddle()
@@ -94,5 +146,19 @@ public class BoidsManager : MonoBehaviour
 
         middle /= boids.Count;
         return middle;
+    }
+    public Boid GetLeader()
+    {
+        return leader;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = new Color(1f, 0f, 0f, 0.5f);
+        Gizmos.DrawSphere(leaderStartPosition, radiusZone);
+
+        // Draw wire sphere outline.
+        Gizmos.color = Color.white;
+        Gizmos.DrawWireSphere(leaderStartPosition, radiusZone);
     }
 }

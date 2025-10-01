@@ -62,16 +62,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Boids\Scripts\SpecialBoidModule.cs" />
-    <Compile Include="Assets\Boids\Scripts\SeparationModule.cs" />
+    <Compile Include="Assets\Boids\Scripts\Module\SeparationModule.cs" />
     <Compile Include="Assets\Boids\Scripts\BoidData.cs" />
+    <Compile Include="Assets\Boids\Scripts\FollowPoints.cs" />
+    <Compile Include="Assets\Boids\Scripts\Module\BoidModules.cs" />
     <Compile Include="Assets\Boids\Scripts\Boid.cs" />
+    <Compile Include="Assets\Boids\Scripts\Module\AlignmentModule.cs" />
     <Compile Include="Assets\Boids\Scripts\Hunter\Hunter.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\Boids\Scripts\BoidModules.cs" />
-    <Compile Include="Assets\Boids\Scripts\CohesionModule.cs" />
-    <Compile Include="Assets\Boids\Scripts\MovementModule.cs" />
+    <Compile Include="Assets\Boids\Scripts\Module\FollowLeaderModule.cs" />
+    <Compile Include="Assets\Boids\Scripts\Module\RepulseModule.cs" />
+    <Compile Include="Assets\Boids\Scripts\Module\MovementModule.cs" />
+    <Compile Include="Assets\Boids\Scripts\Module\CohesionModule.cs" />
+    <Compile Include="Assets\Boids\Scripts\Module\StayInZoneModule.cs" />
     <Compile Include="Assets\Boids\Scripts\BoidsManager.cs" />
-    <Compile Include="Assets\Boids\Scripts\AlignmentModule.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

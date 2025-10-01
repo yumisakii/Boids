@@ -2,10 +2,9 @@ using UnityEngine;
 
 public class MovementModule : BoidModules
 {
-    private readonly float baseSpeed = 5f;
-    private readonly float maxSpeed = 50f;
-    private readonly float friction = 0.98f;
-    
+    private float baseSpeed = 10f;
+    private float maxSpeed = 30f;
+    private float friction = 0.98f;
     public override void Init(Boid boid, BoidData data)
     {
         base.Init(boid, data);
