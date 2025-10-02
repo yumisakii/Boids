@@ -15,9 +15,9 @@ public class MovementModule : BoidModules
             ).normalized * baseSpeed;
     }
 
-    public override void Update()
+    public override void Update(BoidData data)
     {
-        base.Update();
+        base.Update(data);
 
         _boid.velocity = _boid.velocity.normalized * baseSpeed * _boid.speedMultiplicator;
 

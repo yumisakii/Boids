@@ -9,9 +9,9 @@ public class SeparationModule : BoidModules
         base.Init(boid, data);
     }
 
-    public override void Update()
+    public override void Update(BoidData data)
     {
-        base.Update();
+        base.Update(data);
 
         _boid.velocity += GetSeparationDirection(_closeNeighborsList) * _data.Separation * Time.deltaTime * 10;
     }

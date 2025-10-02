@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using Unity.Android.Gradle.Manifest;
 using UnityEngine;
 
 public abstract class BoidModules
@@ -20,8 +19,10 @@ public abstract class BoidModules
         boidsManager = boid.GetBoidsManager();
     }
    
-    public virtual void Update()
+    public virtual void Update(BoidData data)
     {
+        _data = data;
+
         var (closeNeighbors, neighbors) = boidsManager.GetNeighborsBoids(_boid);
         _closeNeighborsList = closeNeighbors;
         _neighborsList = neighbors;

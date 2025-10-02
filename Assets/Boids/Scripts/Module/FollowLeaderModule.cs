@@ -13,9 +13,9 @@ public class FollowLeaderModule : BoidModules
         _followStrength = data.FollowLeaderStrength;
     }
 
-    public override void Update()
+    public override void Update(BoidData data)
     {
-        base.Update();
+        base.Update(data);
 
         if (_leader == null || _leader == _boid)
             return;

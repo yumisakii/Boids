@@ -1,30 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jdevaulchier\\Boids\\",
+  "WorkspaceRootPath": "C:\\Users\\jonat\\Desktop\\Boids\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|c:\\users\\jdevaulchier\\boids\\assets\\boids\\scripts\\boidsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|solutionrelative:assets\\boids\\scripts\\boidsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jdevaulchier\\Boids\\Assets\\Boids\\Scripts\\MovementModule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Boids\\Scripts\\MovementModule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|c:\\users\\jdevaulchier\\boids\\assets\\boids\\scripts\\specialboidmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|solutionrelative:assets\\boids\\scripts\\specialboidmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|C:\\Users\\jdevaulchier\\Boids\\assets\\boids\\scripts\\boid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|C:\\Users\\jonat\\Desktop\\Boids\\assets\\boids\\scripts\\boid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|solutionrelative:assets\\boids\\scripts\\boid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|c:\\users\\jdevaulchier\\boids\\assets\\boids\\scripts\\module\\movementmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|solutionrelative:assets\\boids\\scripts\\module\\movementmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|C:\\Users\\jonat\\Desktop\\Boids\\assets\\boids\\scripts\\boidsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|solutionrelative:assets\\boids\\scripts\\boidsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|C:\\Users\\jdevaulchier\\Boids\\assets\\boids\\scripts\\hunter\\hunter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|solutionrelative:assets\\boids\\scripts\\hunter\\hunter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|c:\\users\\jonat\\desktop\\boids\\assets\\boids\\scripts\\boiddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|solutionrelative:assets\\boids\\scripts\\boiddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,82 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SpecialBoidModule.cs",
-              "DocumentMoniker": "C:\\Users\\jdevaulchier\\Boids\\Assets\\Boids\\Scripts\\SpecialBoidModule.cs",
-              "RelativeDocumentMoniker": "Assets\\Boids\\Scripts\\SpecialBoidModule.cs",
-              "ToolTip": "C:\\Users\\jdevaulchier\\Boids\\Assets\\Boids\\Scripts\\SpecialBoidModule.cs",
-              "RelativeToolTip": "Assets\\Boids\\Scripts\\SpecialBoidModule.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAgwCoAAAAWAAAAAAAAAA==",
+              "Title": "BoidData.cs",
+              "DocumentMoniker": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\BoidData.cs",
+              "RelativeDocumentMoniker": "Assets\\Boids\\Scripts\\BoidData.cs",
+              "ToolTip": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\BoidData.cs",
+              "RelativeToolTip": "Assets\\Boids\\Scripts\\BoidData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T10:27:20.609Z",
+              "WhenOpened": "2025-10-02T21:45:36.044Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MovementModule.cs",
-              "DocumentMoniker": "C:\\Users\\jdevaulchier\\Boids\\Assets\\Boids\\Scripts\\Module\\MovementModule.cs",
-              "RelativeDocumentMoniker": "Assets\\Boids\\Scripts\\Module\\MovementModule.cs",
-              "ToolTip": "C:\\Users\\jdevaulchier\\Boids\\Assets\\Boids\\Scripts\\Module\\MovementModule.cs",
-              "RelativeToolTip": "Assets\\Boids\\Scripts\\Module\\MovementModule.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T10:11:34.008Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Hunter.cs",
-              "DocumentMoniker": "C:\\Users\\jdevaulchier\\Boids\\Assets\\Boids\\Scripts\\Hunter\\Hunter.cs",
-              "RelativeDocumentMoniker": "Assets\\Boids\\Scripts\\Hunter\\Hunter.cs",
-              "ToolTip": "C:\\Users\\jdevaulchier\\Boids\\Assets\\Boids\\Scripts\\Hunter\\Hunter.cs",
-              "RelativeToolTip": "Assets\\Boids\\Scripts\\Hunter\\Hunter.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwA0AAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T09:44:57.154Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Boid.cs",
-              "DocumentMoniker": "C:\\Users\\jdevaulchier\\Boids\\Assets\\Boids\\Scripts\\Boid.cs",
+              "DocumentMoniker": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\Boid.cs",
               "RelativeDocumentMoniker": "Assets\\Boids\\Scripts\\Boid.cs",
-              "ToolTip": "C:\\Users\\jdevaulchier\\Boids\\Assets\\Boids\\Scripts\\Boid.cs",
+              "ToolTip": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\Boid.cs",
               "RelativeToolTip": "Assets\\Boids\\Scripts\\Boid.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwDAAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-29T08:54:57.812Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "BoidsManager.cs",
-              "DocumentMoniker": "C:\\Users\\jdevaulchier\\Boids\\Assets\\Boids\\Scripts\\BoidsManager.cs",
+              "DocumentMoniker": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\BoidsManager.cs",
               "RelativeDocumentMoniker": "Assets\\Boids\\Scripts\\BoidsManager.cs",
-              "ToolTip": "C:\\Users\\jdevaulchier\\Boids\\Assets\\Boids\\Scripts\\BoidsManager.cs",
+              "ToolTip": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\BoidsManager.cs",
               "RelativeToolTip": "Assets\\Boids\\Scripts\\BoidsManager.cs",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAuwIYAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAYwKcAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-29T08:54:51.171Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MovementModule.cs",
-              "DocumentMoniker": "C:\\Users\\jdevaulchier\\Boids\\Assets\\Boids\\Scripts\\MovementModule.cs",
-              "RelativeDocumentMoniker": "Assets\\Boids\\Scripts\\MovementModule.cs",
-              "ToolTip": "C:\\Users\\jdevaulchier\\Boids\\Assets\\Boids\\Scripts\\MovementModule.cs",
-              "RelativeToolTip": "Assets\\Boids\\Scripts\\MovementModule.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T09:45:02.473Z"
             }
           ]
         }

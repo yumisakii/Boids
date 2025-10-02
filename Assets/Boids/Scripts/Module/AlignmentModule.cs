@@ -8,9 +8,9 @@ public class AlignmentModule : BoidModules
         base.Init(boid, data);
     }
 
-    public override void Update()
+    public override void Update(BoidData data)
     {
-        base.Update();
+        base.Update(data);
 
         _boid.velocity += GetAlignmentDirection() * _data.Alignement * Time.deltaTime;
     }

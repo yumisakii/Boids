@@ -127,10 +127,6 @@ public class BoidsManager : MonoBehaviour
 
     void CreateHunter()
     {
-        //Hunter newHunter = Instantiate(hunter, new Vector3(30f, 30f, 30f), Quaternion.identity);
-
-        //newHunter.SetManager(this);
-        //newHunter.Init();
         hunter.SetManager(this);
         hunter.Init();
     }
@@ -160,5 +156,17 @@ public class BoidsManager : MonoBehaviour
         // Draw wire sphere outline.
         Gizmos.color = Color.white;
         Gizmos.DrawWireSphere(leaderStartPosition, radiusZone);
+    }
+
+    public BoidData GetBoidData()
+    {
+        BoidData data = new BoidData();
+
+        data.Cohesion = cohesion;
+        data.Alignement = alignement;
+        data.Separation = separation;
+        data.FollowLeaderStrength = followLeaderStrength;
+
+        return data;
     }
 }

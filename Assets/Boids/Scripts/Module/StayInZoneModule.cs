@@ -12,9 +12,9 @@ public class StayInZoneModule : BoidModules
         radius = _boid.GetBoidsManager().GetZoneRadius();
     }
 
-    public override void Update()
+    public override void Update(BoidData data)
     {
-        base.Update();
+        base.Update(data);
 
         Vector3 toCenter = center - _boid.transform.position;
         float distance = toCenter.magnitude;

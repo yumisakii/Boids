@@ -9,6 +9,8 @@ public class Boid : MonoBehaviour
     public Vector3 velocity = Vector3.zero;
     public float speedMultiplicator;
 
+    private BoidData boidData;
+
     public void Init(BoidData data)
     {
         speedMultiplicator = 1;
@@ -44,9 +46,11 @@ public class Boid : MonoBehaviour
     {
         if (modules == null) return;
 
+        boidData = boidsManager.GetBoidData();
+
         for (int i = 0; i < modules.Count; i++)
         {
-            modules[i].Update();
+            modules[i].Update(boidData);
         }
     }
 

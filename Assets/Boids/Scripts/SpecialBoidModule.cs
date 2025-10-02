@@ -38,9 +38,9 @@ public class SpecialBoidModule : BoidModules
         }
     }
 
-    public override void Update()
-    {
-        base.Update();
+    //public override void Update()
+    //{
+    //    base.Update();
 
         //if (isColibris)
         //{
@@ -60,5 +60,5 @@ public class SpecialBoidModule : BoidModules
         //    }
         //}
 
-    }
+    //}
 }
