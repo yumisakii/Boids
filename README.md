@@ -56,7 +56,7 @@ _(GIF placeholder — replace with your own demo once available)_
 
 1. Clone or download the repository  
    ```bash
-   git clone https://github.com/<your-username>/Boids.git
+   git clone https://github.com/yumisakii/Boids.git
 
 2. Open the project in Unity 6
 
@@ -86,5 +86,5 @@ _(GIF placeholder — replace with your own demo once available)_
 
 **Jonathan de Vaulchier**  
 🎮 Student Developer @ [Gaming Campus – G.Tech](https://gamingcampus.fr/ecoles/ecole-developpeur-jeux-video-g-tech.html)  
-📧 [jonathan.devaulchier@orange.fr](mailto:jonathan.devaulchier@orange.fr)  
-🔗 [GitHub Profile](https://github.com/<your-username>)
+📧 [jonathan.devaulchier.dev@gmail.com](mailto:jonathan.devaulchier.dev@gmail.com)  
+🔗 [GitHub Profile](https://github.com/yumisakii)
