@@ -3,52 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\jonat\\Desktop\\Boids\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|C:\\Users\\jonat\\Desktop\\Boids\\assets\\boids\\scripts\\module\\cohesionmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|solutionrelative:assets\\boids\\scripts\\module\\cohesionmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|c:\\users\\jonat\\desktop\\boids\\assets\\boids\\scripts\\specialboidmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|solutionrelative:assets\\boids\\scripts\\specialboidmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|C:\\Users\\jonat\\Desktop\\Boids\\assets\\boids\\scripts\\module\\boidmodules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|solutionrelative:assets\\boids\\scripts\\module\\boidmodules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|C:\\Users\\jonat\\Desktop\\Boids\\assets\\boids\\scripts\\module\\alignmentmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|solutionrelative:assets\\boids\\scripts\\module\\alignmentmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|C:\\Users\\jonat\\Desktop\\Boids\\assets\\boids\\scripts\\module\\followleadermodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|solutionrelative:assets\\boids\\scripts\\module\\followleadermodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|C:\\Users\\jonat\\Desktop\\Boids\\assets\\boids\\scripts\\module\\repulsemodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|solutionrelative:assets\\boids\\scripts\\module\\repulsemodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|C:\\Users\\jonat\\Desktop\\Boids\\assets\\boids\\scripts\\module\\separationmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|solutionrelative:assets\\boids\\scripts\\module\\separationmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|C:\\Users\\jonat\\Desktop\\Boids\\assets\\boids\\scripts\\module\\stayinzonemodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|solutionrelative:assets\\boids\\scripts\\module\\stayinzonemodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|C:\\Users\\jonat\\Desktop\\Boids\\assets\\boids\\scripts\\module\\movementmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|solutionrelative:assets\\boids\\scripts\\module\\movementmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|C:\\Users\\jonat\\Desktop\\Boids\\assets\\boids\\scripts\\boid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|solutionrelative:assets\\boids\\scripts\\boid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|C:\\Users\\jonat\\Desktop\\Boids\\assets\\boids\\scripts\\boidsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|solutionrelative:assets\\boids\\scripts\\boidsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|C:\\Users\\jonat\\Desktop\\Boids\\assets\\boids\\scripts\\boid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|solutionrelative:assets\\boids\\scripts\\boid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|C:\\Users\\jonat\\Desktop\\Boids\\assets\\boids\\scripts\\hunter\\hunter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|solutionrelative:assets\\boids\\scripts\\hunter\\hunter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|c:\\users\\jonat\\desktop\\boids\\assets\\boids\\scripts\\boiddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|solutionrelative:assets\\boids\\scripts\\boiddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,153 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "StayInZoneModule.cs",
-              "DocumentMoniker": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\Module\\StayInZoneModule.cs",
-              "RelativeDocumentMoniker": "Assets\\Boids\\Scripts\\Module\\StayInZoneModule.cs",
-              "ToolTip": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\Module\\StayInZoneModule.cs",
-              "RelativeToolTip": "Assets\\Boids\\Scripts\\Module\\StayInZoneModule.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T21:37:06.611Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SeparationModule.cs",
-              "DocumentMoniker": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\Module\\SeparationModule.cs",
-              "RelativeDocumentMoniker": "Assets\\Boids\\Scripts\\Module\\SeparationModule.cs",
-              "ToolTip": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\Module\\SeparationModule.cs",
-              "RelativeToolTip": "Assets\\Boids\\Scripts\\Module\\SeparationModule.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T21:37:06.005Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RepulseModule.cs",
-              "DocumentMoniker": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\Module\\RepulseModule.cs",
-              "RelativeDocumentMoniker": "Assets\\Boids\\Scripts\\Module\\RepulseModule.cs",
-              "ToolTip": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\Module\\RepulseModule.cs",
-              "RelativeToolTip": "Assets\\Boids\\Scripts\\Module\\RepulseModule.cs",
+              "DocumentIndex": 2,
+              "Title": "BoidData.cs",
+              "DocumentMoniker": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\BoidData.cs",
+              "RelativeDocumentMoniker": "Assets\\Boids\\Scripts\\BoidData.cs",
+              "ToolTip": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\BoidData.cs",
+              "RelativeToolTip": "Assets\\Boids\\Scripts\\BoidData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T21:37:05.312Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FollowLeaderModule.cs",
-              "DocumentMoniker": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\Module\\FollowLeaderModule.cs",
-              "RelativeDocumentMoniker": "Assets\\Boids\\Scripts\\Module\\FollowLeaderModule.cs",
-              "ToolTip": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\Module\\FollowLeaderModule.cs",
-              "RelativeToolTip": "Assets\\Boids\\Scripts\\Module\\FollowLeaderModule.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T21:37:03.362Z"
+              "WhenOpened": "2025-10-02T21:45:36.044Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CohesionModule.cs",
-              "DocumentMoniker": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\Module\\CohesionModule.cs",
-              "RelativeDocumentMoniker": "Assets\\Boids\\Scripts\\Module\\CohesionModule.cs",
-              "ToolTip": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\Module\\CohesionModule.cs",
-              "RelativeToolTip": "Assets\\Boids\\Scripts\\Module\\CohesionModule.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T21:37:02.572Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AlignmentModule.cs",
-              "DocumentMoniker": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\Module\\AlignmentModule.cs",
-              "RelativeDocumentMoniker": "Assets\\Boids\\Scripts\\Module\\AlignmentModule.cs",
-              "ToolTip": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\Module\\AlignmentModule.cs",
-              "RelativeToolTip": "Assets\\Boids\\Scripts\\Module\\AlignmentModule.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T21:36:58.689Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BoidModules.cs",
-              "DocumentMoniker": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\Module\\BoidModules.cs",
-              "RelativeDocumentMoniker": "Assets\\Boids\\Scripts\\Module\\BoidModules.cs",
-              "ToolTip": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\Module\\BoidModules.cs",
-              "RelativeToolTip": "Assets\\Boids\\Scripts\\Module\\BoidModules.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAvwAwAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T21:31:39.999Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SpecialBoidModule.cs",
-              "DocumentMoniker": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\SpecialBoidModule.cs",
-              "RelativeDocumentMoniker": "Assets\\Boids\\Scripts\\SpecialBoidModule.cs",
-              "ToolTip": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\SpecialBoidModule.cs",
-              "RelativeToolTip": "Assets\\Boids\\Scripts\\SpecialBoidModule.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwD4AAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T10:27:20.609Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MovementModule.cs",
-              "DocumentMoniker": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\Module\\MovementModule.cs",
-              "RelativeDocumentMoniker": "Assets\\Boids\\Scripts\\Module\\MovementModule.cs",
-              "ToolTip": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\Module\\MovementModule.cs",
-              "RelativeToolTip": "Assets\\Boids\\Scripts\\Module\\MovementModule.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T10:11:34.008Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Hunter.cs",
-              "DocumentMoniker": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\Hunter\\Hunter.cs",
-              "RelativeDocumentMoniker": "Assets\\Boids\\Scripts\\Hunter\\Hunter.cs",
-              "ToolTip": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\Hunter\\Hunter.cs",
-              "RelativeToolTip": "Assets\\Boids\\Scripts\\Hunter\\Hunter.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwA0AAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T09:44:57.154Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "Boid.cs",
               "DocumentMoniker": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\Boid.cs",
               "RelativeDocumentMoniker": "Assets\\Boids\\Scripts\\Boid.cs",
               "ToolTip": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\Boid.cs",
               "RelativeToolTip": "Assets\\Boids\\Scripts\\Boid.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwDIAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwDAAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T08:54:57.812Z"
+              "WhenOpened": "2025-09-29T08:54:57.812Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "BoidsManager.cs",
               "DocumentMoniker": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\BoidsManager.cs",
               "RelativeDocumentMoniker": "Assets\\Boids\\Scripts\\BoidsManager.cs",
               "ToolTip": "C:\\Users\\jonat\\Desktop\\Boids\\Assets\\Boids\\Scripts\\BoidsManager.cs",
               "RelativeToolTip": "Assets\\Boids\\Scripts\\BoidsManager.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwH4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAYwKcAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T08:54:51.171Z"
+              "WhenOpened": "2025-09-29T08:54:51.171Z",
+              "EditorCaption": ""
             }
           ]
         }
