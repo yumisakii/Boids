@@ -46,8 +46,6 @@ The goal was to **learn how to manage object hierarchies, inheritance, and varia
 
 ## 🎥 Preview
 
-_(GIF placeholder — replace with your own demo once available)_
-
 ![Boids Simulation Preview](./Docs/boids_demo.gif)
 
 ---
